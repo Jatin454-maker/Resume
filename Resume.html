@@ -1,0 +1,221 @@
+<!-- Example Resume Layout HTML & CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: rgb(244, 246, 248);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .sidebar {
+            background: rgb(143, 211, 232);
+            width: 300px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo-box {
+            width: 180px;
+            height: 180px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            background: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .photo-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform  0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .photo-box img:hover {
+            transform: scale(1.2);
+        }
+        
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 16px;
+            color: rgb(34, 34, 34);
+        }
+        .sidebar h3 {
+            font-size: 1.1em;
+            margin: 24px 0 8px 0;
+            color: rgb(34, 34, 34);
+        }
+        .sidebar p, .sidebar a, .sidebar li {
+            font-size: 1em;
+            color: rgb(34, 34, 34);
+        }
+        .contact-info {
+            margin-bottom: 24px;
+        }
+        .skillset {
+            margin-top: 24px;
+            width: 100%;
+        }
+        .skillset-title {
+            background: rgb(17, 26, 32);
+            color: rgb(255, 255, 255);
+            padding: 6px 12px;
+            font-weight: bold;
+            border-radius: 4px 4px 0 0;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 12px 0 0 16px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 24px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 32px 40px;
+            background: rgb(35, 47, 62);
+            color: rgb(255, 255, 255);
+        }
+        .main-content h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            color: rgb(255, 255, 255);
+        }
+        .main-content h2 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin-bottom: 24px;
+            color: rgb(209, 234, 255);
+        }
+        .section {
+            background: rgb(255, 255, 255);
+            color: rgb(35, 47, 62);
+            margin-bottom: 24px;
+            border-radius: 4px;
+            padding: 24px 24px 16px 24px;
+        }
+        .section-title {
+            background: rgb(35, 47, 62);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px 4px 0 0;
+            margin: -24px -24px 16px -24px;
+            font-size: 1.1em;
+        }
+        .section-content {
+            padding-left: 8px;
+        }
+        .award-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .award-list li {
+            margin-bottom: 16px;
+        }
+        .award-date {
+            font-weight: bold;
+            color: rgb(35, 47, 62);
+            margin-right: 12px;
+        }
+        .award-title {
+            font-weight: bold;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content {
+                padding: 24px;
+            }
+            .sidebar {
+                width: 100%;
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo-box">
+                <img src="./Jatin s photo.jpg" alt="Profile Photo">
+            </div>
+            <h2>Profile</h2>
+            <p>
+                I am a first-year BCA student specializing in AI and ML, after completing my 12th grade this year and joining college. I am eager to learn and dedicate myself to mastering the principles of computer applications and machine learning. I believe in the power of hard work and commitment to excel in my studies and future career. I am determined to persevere through challenges to achieve my goals in this rapidly evolving field.
+
+             </p>
+            <h3>Contact</h3>
+            <div class="contact-info">
+                 <a href="tel:+91 9998809855">+91 999880****</a><br>
+                <a href="mailto:jatin85916@gmail.com">jatin85916@gmail.com</a><br>
+                <span>Location: Bhiwani, Haryana</span>
+            </div>
+            <div class="skillset">
+                <div class="skillset-title">Technical Skillset</div>
+                <ul class="skills-list">
+                    <li>Reading</li>
+                    <li>Hiking</li>
+                    <li>Running</li>
+                    <li>Jumping</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Jatin Yadav</h1>
+            <h2>Code Quotient student</h2>
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="section-content">
+                    <strong>2025 - Pursuing</strong><br>
+                    <span class="award-title">Bachelor's Degree</span><br>
+                    Chaudhary Bansi Lal University 
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">knowledge</div>
+                <div class="section-content">
+                    <strong>Python</strong><br>
+                    Apna College yt platform and School<br><br>
+                    <strong>HTML and CSS</strong><br>
+                    Apna College yt platform and college<br><br>
+                    <strong>C language</strong><br>
+                    Apna College yt platform and college
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Projects</div>
+                <ul class="award-list section-content">
+                    <li>
+                        <span class="award-date">August 2024</span>
+                        <span class="award-title">ATM interface</span><br>
+                        Group Activity
+                    </li>
+                    <li>
+                        <span class="award-date">September 2024</span>
+                        <span class="award-title">Quiz Game</span><br>
+                        Solo Activity
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
